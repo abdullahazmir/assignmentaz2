@@ -1,0 +1,53 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    
+.quicksand-simple {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+  /* common style */
+  .padding{ 0px;}
+  .margin{ 0px;}
+  .box-sizing{
+    border-box;
+  }
+  *{
+    border: 1px solid red;
+  }
+  
+  body{
+    border: 2px dashed green;
+  }
+  .navigation{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .header{
+    display: flex;
+  }
+  .curriculum{
+    background-image:url(../assets/bg.png)
+  }
+  .stories{
+    background-image:url(../assets/bg.png)
+  }
+  .card{
+    display: flex;
+  }
+  .back-see{
+    width: 20px;
+    height: 20px;
+  }
+  .right-4{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .stories{
+    display: flex;
+  }
+  .footer{
+    display: flex;
+  }
