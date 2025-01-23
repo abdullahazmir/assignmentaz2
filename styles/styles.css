@@ -7,6 +7,12 @@
     font-weight:400;
     font-style: normal;
   }
+  .marquee {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color: #ffffff;
+    padding: 10px;
+}
   /* common style */
   .padding{ 0px;}
   .margin{ 0px;}
@@ -20,18 +26,33 @@
   body{
     border: 2px dashed green;
   }
+  .width{
+    width: 100%;
+  }
   .navigation{
     display: flex;
     justify-content: space-around;
   }
+  .school{
+    display: flex;
+  }
+  .school-text{
+    padding-top: 20px;
+  }
+  .home-all{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
   
   .header{
     display: flex;
+    justify-content: space-between;
   }
   .curriculum{
     background-image:url(../assets/bg.png)
   }
-  .stories{
+  .new{
     background-image:url(../assets/bg.png)
   }
   .card{
@@ -46,8 +67,17 @@
     grid-template-columns: repeat(2,1fr);
   }
   .stories{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .big-image{
+    width: 40rem;
   }
   .footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #01ACFD;
+  }
+  .last-icon{
     display: flex;
   }
