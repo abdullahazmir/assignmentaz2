@@ -19,14 +19,29 @@
   .box-sizing{
     border-box;
   }
-  *{
+  /* *{
     border: 1px solid red;
   }
   
   body{
     border: 2px dashed green;
-  }
+  } */
   .width{
+    width: 100%;
+  }
+  /* img{
+      width: 100%; */
+  .menu-img{
+    width: 10px;
+    
+  }
+  .menu{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-kids{
     width: 100%;
   }
   .navigation{
@@ -171,19 +186,13 @@
   align-items: center;
   margin-top: 20px;
  }
-  /* .right-4{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
-  .stories{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .big-image{
-    width: 40rem; */
-  }
-  
-  
+ #back-see img{
+  object-fit: cover;
+  transition: all ease 1s;
+ }
+ #back-see:hover img{
+    scale: 1.2;
+ }
   
   .new{
     background-image:
@@ -192,15 +201,61 @@
     width: 100%;
     background-size: cover;
    color: white; }
+   .back-see:hover{ 
+    color: #5D58F0;
+   }
+   /* hover */
+   .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 
 .all-story{
   display: flex;
   gap: 100px;
   background-image: url(../assets/bg.png);
+  
 }
 .all-story img{
   width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .left{
   border-radius: 16px;
@@ -222,16 +277,6 @@
 .story-5{
   border-radius: 16px;
 }
-/* .n19{
-  background-color: #95B226;
-  border-radius: 20px; 
-  font-weight: 500;
-  font-size: 15px;
-  color: white;
-  border: none;
- width: 10em;
- margin-bottom: 30px;
- margin-left: 10px; */
 .img2 {
  
   position:relative;
@@ -283,7 +328,45 @@
   justify-content: space-evenly;
   background-color: #01ACFD;
 }
+.about-school{
+  font-size: 25px ;
+}
 .last-icon{
   display: flex;
   gap: 10px;
 }
+ /* For Responsiveness */
+ @media only screen and (max-width: 576px) {
+
+  
+  
+  .header{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+     .about, .admission, .home, .facilities, .school-text, .contact
+     {display: none;}
+     border-bottom: solid 2px orange;
+
+  }
+  .all-story{
+    .left{display: none;}
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
+ }
+ @media only screen and (min-width:577px){
+  .menu-img{display: none;}
+ }
